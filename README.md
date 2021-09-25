@@ -28,8 +28,88 @@ Per anak membuat lapres 5 soal (Gavin 1-5, Tera 6-10, 11-15), namun pada pengerj
 * [Soal 14](#soal-14)
 * [Soal 15](#soal-15)
 
-### Screenshot
-### Cara Pengerjaan
+## Soal 11
+Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
+### Penyelesaian
+Mengisi Capture Filter dengan : **src port 80**
+<br>
+<img height="500" src="" />
+<br>
+
+Berikut hasil dari wireshark
+<br>
+<img height="500" src="" />
+<br>
+<br>
+<img height="500" src="" />
+<br>
+
+## Soal 12
+Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+### Penyelesaian
+Pertama, nyalakan wireshark dengan capture filter port 21, pilih adapter for loopback traffic
+<br>
+<img height="500" src="" />
+<br>
+
+Kemudian nyalakan aplikasi Xampp sekaligus aplikasi Filezilla
+<br>
+<img height="500" src="" />
+<br>
+
+Kemudian dengan Filezilla client, lakukan ftp dengan kredensial yang sudah dibuat
+<br>
+<img height="500" src="" />
+<br>
+
+Drag file dari remote site ke local site. jika berhasil, nanti muncul di wireshark
+<br>
+<img height="500" src="" />
+<br>
+
+Berikut merupakan tampilan di wireshark dengan capture filter port 21
+<br>
+<img height="500" src="" />
+<br>
+
+## Soal 13
+Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+### Penyelesaian
+Mengisi Capture Filter dengan `dst port 443`
+<br>
+<img height="500" src="" />
+<br>
+
+Setelah itu, akan menampilkan paket yang menuju port 443.
+<br>
+<img height="500" src="" />
+<br>
+
+## Soal 14
+Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
+### Penyelesaian
+Mengisi Capture Filter dengan `host kemenag.go.id` menggunakan loopback traffic
+<br>
+<img height="500" src="" />
+<br>
+
+Setelah itu wireshark akan menampilkan pengambilan hasil pake yang menuju ke kemenag.go.id
+<br>
+<img height="500" src="" />
+<br>
+
+## Soal 15
+Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+### Penyelesaian
+Mengisi capture filter dengan `src host 192.168.0.29`
+<br>
+<img height="500" src="" />
+<br>
+
+Setelah itu, wireshark akan memunculkan paket yang berasal dari ip tersebut
+<br>
+<img height="500" src="" />
+<br>
 
 ## Kendala yang Dialami
 Tidak ada
