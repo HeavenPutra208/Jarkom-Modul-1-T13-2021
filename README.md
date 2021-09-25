@@ -46,6 +46,23 @@ Mengisi display filter: http.authbasic
 ![image](https://user-images.githubusercontent.com/73151823/134769838-da2aa4e0-8a66-454c-b474-d3cd322fafe9.png)
 <br>
 
+## Soal 3
+Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
+### Penyelesaian
+Mengisi display filter http.host contains “ichimarumaru.tech”
+<br>
+![image](https://user-images.githubusercontent.com/73151823/134770004-d04fd1bf-90de-43c2-bd33-ba61b333b761.png)
+<br>
+Kemudian buka paket no 2066. Atau bisa cari menggunakan search string "credentials"
+<br>
+![image](https://user-images.githubusercontent.com/73151823/134770060-783b88f4-a2bf-4ced-b4d8-6b3b054c342a.png)
+<br>
+kuncimenujulautan: tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN gunakan kredensial tersebut untuk login di basic.ichimarumaru.tech dan isi konfigurasi kabel T568A
+<br>
+```hijau-putih, hijau, putih-orange, biru, putih-biru, orange, putih-coklat, coklat```
+![image](https://user-images.githubusercontent.com/73151823/134770115-3012c00a-acb4-4103-9173-a6bc9474d0dd.png)
+<br>
+
 ## Soal 6
 Cari username dan password ketika melakukan login ke FTP Server menggunakan display filter ftp kemudian cari request USER dan PASS
 ### Penyelesaian
