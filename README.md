@@ -33,15 +33,12 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 ### Penyelesaian
 Mengisi Capture Filter dengan : **src port 80**
 <br>
-<img height="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/11-1.jpg" />
+<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/11-1.jpg" />
 <br>
 
 Berikut hasil dari wireshark
 <br>
 <img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/11-2.jpg" />
-<br>
-<br>
-<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/11-3.jpg" />
 <br>
 
 ## Soal 12
