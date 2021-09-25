@@ -31,7 +31,7 @@ Per anak membuat lapres 5 soal (Gavin 1-5, Tera 6-10, 11-15), namun pada pengerj
 ## Soal 1
 Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
 ### Penyelesaian
-Mengisi display filter: http.host contains "ichimarumaru.tech" lalu cek HTTP headernya
+Mengisi display filter: ```http.host contains "ichimarumaru.tech"``` lalu cek HTTP headernya
 <br>
 webservernya nginx/1.18.0 (Ubuntu)
 <br>
@@ -41,7 +41,7 @@ webservernya nginx/1.18.0 (Ubuntu)
 ## Soal 2
 Temukan paket dari web-web yang menggunakan basic authentication method!
 ### Penyelesaian
-Mengisi display filter: http.authbasic
+Mengisi display filter: ```http.authbasic```
 <br>
 ![image](https://user-images.githubusercontent.com/73151823/134769838-da2aa4e0-8a66-454c-b474-d3cd322fafe9.png)
 <br>
@@ -49,7 +49,7 @@ Mengisi display filter: http.authbasic
 ## Soal 3
 Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
 ### Penyelesaian
-Mengisi display filter http.host contains “ichimarumaru.tech”
+Mengisi display filter ```http.host contains "ichimarumaru.tech"```
 <br>
 ![image](https://user-images.githubusercontent.com/73151823/134770004-d04fd1bf-90de-43c2-bd33-ba61b333b761.png)
 <br>
@@ -66,9 +66,23 @@ kuncimenujulautan: tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN gunakan kredensial t
 ## Soal 4
 Temukan paket mysql yang mengandung perintah query select!
 ### Penyelesaian
-menggunakan display filter mysql.query contains "select" || mysql.query contains "SELECT", kemudian cari yang querynya select
+menggunakan display filter ```mysql.query contains "select" || mysql.query contains "SELECT"```, kemudian cari yang querynya select
 <br>
 ![image](https://user-images.githubusercontent.com/73151823/134771730-5077fa6a-12f9-4f9b-817a-89218ba1cd78.png)
+<br>
+
+## Soal 5
+Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
+### Penyelesaian
+Bisa menggunakan display filter ```mysql.query``` kemudian cari string ```username```ATAU langsung ```mysql.query contains "INSERT"```
+<br>
+![image](https://user-images.githubusercontent.com/73151823/134772020-185ecab9-3a76-4721-baca-929e41ed8150.png)
+<br>
+setelah login ke portal.ichimarumaru.tech menggunakan kredensial akakanomi:pemisah4lautan masukkan konfigurasi kabel T568B 
+<br>
+```putih-oren, oren, putih-hijau, biru, putih-biru, hijau, putih-coklat, coklat```
+<br>
+![image](https://user-images.githubusercontent.com/73151823/134772122-e777d7c9-1e20-4262-8e98-02b2bcda12bb.png)
 <br>
 
 ## Soal 6
