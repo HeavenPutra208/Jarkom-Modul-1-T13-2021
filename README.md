@@ -63,12 +63,21 @@ kuncimenujulautan: tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN gunakan kredensial t
 ![image](https://user-images.githubusercontent.com/73151823/134770115-3012c00a-acb4-4103-9173-a6bc9474d0dd.png)
 <br>
 
+## Soal 4
+Temukan paket mysql yang mengandung perintah query select!
+### Penyelesaian
+menggunakan display filter mysql.query contains "select" || mysql.query contains "SELECT", kemudian cari yang querynya select
+<br>
+![image](https://user-images.githubusercontent.com/73151823/134771730-5077fa6a-12f9-4f9b-817a-89218ba1cd78.png)
+<br>
+
 ## Soal 6
 Cari username dan password ketika melakukan login ke FTP Server menggunakan display filter ftp kemudian cari request USER dan PASS
 ### Penyelesaian
-Mengisi Display Filter dengan **ftp**, sehingga USER dan PASS dapat ditemukan
+Mengisi Display Filter dengan **ftp contains "USER" || ftp contains "PASS"**, sehingga USER dan PASS dapat ditemukan
 <br>
-<img width="600" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/6.1.png" />
+![image](https://user-images.githubusercontent.com/73151823/134771854-b2417f35-3661-431f-bdfa-ff4eeec274cb.png)
+
 <br>
 
 ## Soal 7
