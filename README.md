@@ -28,6 +28,14 @@ Per anak membuat lapres 5 soal (Gavin 1-5, Tera 6-10, 11-15), namun pada pengerj
 * [Soal 14](#soal-14)
 * [Soal 15](#soal-15)
 
+## Soal 6
+Cari username dan password ketika melakukan login ke FTP Server menggunakan display filter ftp kemudian cari request USER dan PASS
+### Penyelesaian
+Mengisi Display Filter dengan : **ftp**
+<br>
+<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/6.png" />
+<br>
+
 ## Soal 11
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 ### Penyelesaian
