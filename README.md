@@ -28,6 +28,16 @@ Per anak membuat lapres 5 soal (Gavin 1-5, Tera 6-10, 11-15), namun pada pengerj
 * [Soal 14](#soal-14)
 * [Soal 15](#soal-15)
 
+## Soal 1
+Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
+### Penyelesaian
+Mengisi display filter: http.host contains "ichimarumaru.tech" lalu cek HTTP headernya
+<br>
+webservernya nginx/1.18.0 (Ubuntu)
+<br>
+![image](https://user-images.githubusercontent.com/73151823/134769759-63591806-260e-4996-8922-c14b0afc4c1e.png)
+
+
 ## Soal 6
 Cari username dan password ketika melakukan login ke FTP Server menggunakan display filter ftp kemudian cari request USER dan PASS
 ### Penyelesaian
