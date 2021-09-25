@@ -31,9 +31,76 @@ Per anak membuat lapres 5 soal (Gavin 1-5, Tera 6-10, 11-15), namun pada pengerj
 ## Soal 6
 Cari username dan password ketika melakukan login ke FTP Server menggunakan display filter ftp kemudian cari request USER dan PASS
 ### Penyelesaian
-Mengisi Display Filter dengan : **ftp**
+Mengisi Display Filter dengan **ftp**, sehingga USER dan PASS dapat ditemukan
 <br>
-<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/6.png" />
+<img width="600" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/6.1.png" />
+<br>
+
+## Soal 7
+Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
+### Penyelesaian
+Mengisi Display Filter dengan **frame contains "Real.pdf"**. Kemudian dioperoleh 2 zip sebagai berikut 
+<br>
+<img width="700" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/7.1.png" />
+<br>
+
+Setelah itu, klik kanan pada salah satu file dan pilih Follow -> TCP Stream. Ubah data dari ASCII ke Raw lalu save menjadi "Real.zip"
+<br>
+<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/7.3.png" />
+<br>
+
+Setelah file "Real.zip" dibuka akan ada file "Real.pdf" yang berisi 
+<br>
+<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/7.4.png" />
+<br>
+
+## Soal 8
+Cari paket yang menunjukan pengambilan file dari FTP tersebut!
+### Penyelesaian
+Mengisi Display Filter dengan : **ftp.request.command==STOR**
+<br>
+<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/8.png" />
+<br>
+
+## Soal 9 
+Dari paket-paket yang menuju FTP terdapat indikasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
+### Penyelesaian 
+Dengan menggunakan Display Filter **ftp-data** maka akan ditemukan file bernama "secret.zip"
+<br>
+<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/9.1.png" />
+<br>
+
+Setelah itu, klik kanan pada salah satu file dan pilih Follow -> TCP Stream. Ubah data dari ASCII menjadi Raw dan simpan menjadi "secret.zip"
+<br>
+<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/9.png" />
+<br>
+
+Setelah file "secret.zip" dibuka, akan ada file "Wanted.pdf" yang tidak dapat dibuka karna memiliki password
+<br>
+<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/9.2.png" />
+<br>
+
+## Soal 10
+Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
+### Penyelesaian
+Mengisi Display Filter dengan **ftp-data** dan menemukan file "history.txt" yang berisi history bash
+<br>
+<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/10.1.png" />
+<br>
+
+Setelah melihat isi history bash, terlihat bahwa password dari file "secret.zip" merupakan hasil dari tail -1 "bukanapaapa.txt". Sehingga, selanjutnya kami mencari file "bukanapaapa.txt" dengan menggunakan **ftp-data**
+<br>
+<img width="700" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/10.2.png" />
+<br>
+
+Setelah itu, klik kanan pada salah satu file dan pilih Follow -> TCP Stream. Lalu akan tampil data berbentuk ASCII
+<br>
+<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/10.4.png" />
+<br>
+
+Terlihat dalam file "buknapaapa.txt" berisikan tulisan <em>d1b1langbukanapaapajugagapercaya</em>. Kemudian kami menggunakan tulisan tersebut untuk mengisi password "Wanted.pdf". Berikut adalah isi dari "Wanted.pdf"
+<br>
+<img width="500" src="https://github.com/HeavenPutra208/Jarkom-Modul-1-T13-2021/blob/main/img/9.3.png" />
 <br>
 
 ## Soal 11
