@@ -36,7 +36,15 @@ Mengisi display filter: http.host contains "ichimarumaru.tech" lalu cek HTTP hea
 webservernya nginx/1.18.0 (Ubuntu)
 <br>
 ![image](https://user-images.githubusercontent.com/73151823/134769759-63591806-260e-4996-8922-c14b0afc4c1e.png)
+<br>
 
+## Soal 2
+Temukan paket dari web-web yang menggunakan basic authentication method!
+### Penyelesaian
+Mengisi display filter: http.authbasic
+<br>
+![image](https://user-images.githubusercontent.com/73151823/134769838-da2aa4e0-8a66-454c-b474-d3cd322fafe9.png)
+<br>
 
 ## Soal 6
 Cari username dan password ketika melakukan login ke FTP Server menggunakan display filter ftp kemudian cari request USER dan PASS
